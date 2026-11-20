@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <StudentProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/favourite-student-list">
         <Navbar />
         <Routes>
           <Route path="/" element={<StudentListPage />} />
